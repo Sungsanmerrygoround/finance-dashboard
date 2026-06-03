@@ -3,7 +3,7 @@
 from datetime import datetime
 from storage import load_data
 
-OUTPUT_FILE = "dashboard.html"
+OUTPUT_FILE = "index.html"
 
 
 def render_dashboard(processed_data):
