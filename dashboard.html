@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>금융 대시보드</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, sans-serif; background: #f5f5f5; padding: 32px; }
+    h1 { font-size: 22px; margin-bottom: 4px; }
+    .sub { color: #999; font-size: 13px; margin-bottom: 28px; }
+    .cards { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 32px; }
+    .card { background: white; border-radius: 12px; padding: 20px; min-width: 180px;
+             box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    .card-name  { font-size: 13px; color: #999; margin-bottom: 8px; }
+    .card-price { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+    .card-change { font-size: 14px; }
+    .green { color: #16a34a; }
+    .red   { color: #dc2626; }
+    .gray  { color: #999; }
+    .box   { background: white; border-radius: 12px; padding: 24px;
+              box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    .box h2 { font-size: 15px; color: #666; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+  <h1>📈 금융 대시보드</h1>
+  <p class="sub">마지막 업데이트: 2026-06-03 14:42</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-name">코스피</div>
+      <div class="card-price">8,801.49</div>
+      <div class="card-change green">▲ 0.15%</div>
+    </div>
+    <div class="card">
+      <div class="card-name">원달러</div>
+      <div class="card-price">1,521.98</div>
+      <div class="card-change green">▲ 0.71%</div>
+    </div>
+    <div class="card">
+      <div class="card-name">삼성전자</div>
+      <div class="card-price">360,500.00</div>
+      <div class="card-change green">▲ 3.30%</div>
+    </div>
+    <div class="card">
+      <div class="card-name">SK하이닉스</div>
+      <div class="card-price">2,360,000.00</div>
+      <div class="card-change red">▼ 0.13%</div>
+    </div>
+  </div>
+
+  <div class="box">
+    <h2>히스토리</h2>
+    <p style="color:#bbb; font-size:14px; padding: 8px 0;">데이터가 쌓이면 차트가 표시돼요. 내일 다시 실행해보세요 :)</p>
+  </div>
+</body>
+</html>
